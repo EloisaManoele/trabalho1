@@ -1,43 +1,99 @@
-img {
-  width: 100px;
-  height: 200px;
-  object-fit: fill;
-  margin-left: 70px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+header{
+  background-color:white;
 }
-.body {
-  style="font-family: Arial, Helvetica, sans-serif"; background-color:#B5B6B8;
+body{
+  background-color:#f2f2f2;
 }
-.footer {
-  background-color: #B5B6B8;
+.logo {
+  width: 600px;
+  padding:50px;
 }
-.menu{
-list-style:none;
-border:solid #c0c0c0;
-float:left;
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
-.menu li{
-position:relative;
-float:left;
-border-right:1px solid #c0c0c0;
+
+#menu-h{
+    background-color: #730202;
 }
-.menu li a{color:#333; text-decoration:none; padding:10px 100px; display:block;}
-.menu li a:hover{
-background:#333;
-color:#fff;
--moz-box-shadow:0 3px 10px 0 #CCC;
--webkit-box-shadow:0 3px 10px 0 #ccc;
-text-shadow:0px 0px 5px #fff;
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
 }
-.menu li  ul{
-position:absolute;
-top:40px;
-left:20;
-background-color:0;
-display:none;
+
+#menu-h ul li {
+    display: inline;
 }
-.menu li:hover ul, .menu li.over ul{display:block;}
-.menu li ul li{
-border:1px solid #c0c0c0;
-display:block;
-width:250px;
+
+#menu-h ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-color: #bf0404;
+}
+* { margin: 0; padding: 0; }
+.slider {
+    display: block;
+    height:93px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+.slider input {
+    display: none;
+}
+.slider label {
+    background-color: #000;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    position: absolute;
+    width: 15px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
 }
