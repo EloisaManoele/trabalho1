@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/github/octicons/96/book-24-icon.png" type="image/x-icon">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Menu Horizontal</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <header style="background-color:#B5B6B8">  
-  <img src="https://o.remove.bg/downloads/4b3b2290-c61a-463b-a4d8-e36a95bdb433/imagem_2023-03-22_180405361-removebg-preview.png">
-  </header>
-  <ul class="menu">
-    <li><a href="#">Início</a></li>
-		<li><a href="#">Sobre</a></li>
-    <li><a href="#">Serviços</a></li>
-      <li><a href="#">Níveis de Ensino</a>
+<header>
+   <img class="logo" src="https://www.portalmaripa.com.br/wp-content/uploads/2020/03/logocortado-1-1024x386.jpg">
+    <nav id="menu-h">
         <ul>
-          <li><a href="#">Ensino Fundamental</a></li>
-	        <li><a href="#">Novo Ensino Médio</a></li>
+            <li>
+                <a href="https://satellasoft.com">
+                    Início
+                </a>
+            </li>
+
+            <li><a href="https://academy.satellasoft.com">Sobre</a></li>
+            
+            <li><a href="#">Níveis de Ensino</a></li>
+            
+            <li><a href="#">Contato</a></li>
         </ul>
-      </li>
-          <li><a href="#">Contato</a></li>
-  </ul>
-  <footer>
-      Endereço: Rua Duque de Caxias, 880 - Centro <br>
-      Fone: (44) 3687-1290
-  </footer>
+    </nav>
+  </header>
+<ul class="slider">
+    <li>
+          <img src="https://images.pexels.com/photos/5905557/pexels-photo-5905557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    </li>
+    <li>
+          <img src="https://images.pexels.com/photos/1925536/pexels-photo-1925536.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    </li>
+    <li>
+          <img src="https://images.pexels.com/photos/1106468/pexels-photo-1106468.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    </li>
+</ul>
+  <ul class="slider">
+    <li>
+          <input type="radio" id="slide1" name="slide" checked>
+          <label for="slide1"></label>
+          <img src="https://images.pexels.com/photos/5905557/pexels-photo-5905557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
+    </li>
+    <li>
+          <input type="radio" id="slide2" name="slide">
+          <label for="slide2"></label>
+          <img src="https://images.pexels.com/photos/1925536/pexels-photo-1925536.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    </li>
+    <li>
+          <input type="radio" id="slide3" name="slide">
+          <label for="slide3"></label>
+          <img src="https://images.pexels.com/photos/1106468/pexels-photo-1106468.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    </li>
+</ul>
 </body>
+
 </html>
